@@ -7,43 +7,83 @@
   <!-- Add a link to Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM3tE1z7ZcRTCOo9S4WnnhK1ELyAmc4UyjOvshs" crossorigin="anonymous">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .wrapper {
-      text-align: center;
-    }
-    .wrapper h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    .wrapper h1 .dot {
-      color: #ff5733;
-    }
-    .wrapper p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-    .icons a {
-      margin: 0 10px;
-      color: #333;
-      font-size: 1.5em;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    .icons a:hover {
-      color: #ff5733;
-    }
-    
+   body {
+  background: #04191a;
+  color: #00e094;
+}
+
+
+@keyframes fadeIn {
+  from {top: 20%; opacity: 0;}
+  to {top: 100; opacity: 1;}
+ 
+}
+
+@-webkit-keyframes fadeIn {
+  from {top: 20%; opacity: 0;}
+  to {top: 100; opacity: 1;}
+ 
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  animation: fadeIn 1000ms ease;
+  -webkit-animation: fadeIn 1000ms ease;
+ 
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.dot {
+  color: #00e094;
+}
+
+p {
+  text-align: center;
+  margin: 18px;
+  font-family: 'Muli', sans-serif;
+  font-weight: normal;
+ 
+}
+
+.icons {
+  text-align: center;
+ 
+}
+
+.icons i {
+  color: #00091B;
+  background: #fff;
+  height: 15px;
+  width: 15px;
+  padding: 13px;
+  margin: 0 10px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  transition: all 200ms ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.icons i:hover, .icons i:active {
+  color: #00e094;
+  background: none;
+  cursor: pointer !important;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  text-decoration: none;
+ 
+}
   </style>
 </head>
 <body>
